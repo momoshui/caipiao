@@ -1,4 +1,8 @@
 <?php
+function createTest(){
+	$t = '我就测试一下怎么了？';
+	echo $t;
+}
 function ssq_creat($red_max,$blue_max,$n,$r=6,$b=1){
 	$red = $blue = [];
 	for ($i=1;$i<($red_max+1);$i++){
@@ -22,7 +26,6 @@ function ssq_creat($red_max,$blue_max,$n,$r=6,$b=1){
 			$t .=  '  +  ' . implode("  ", $barr);
 		}
 		$t .= PHP_EOL;
-
 	}
 	return $t;
 }
